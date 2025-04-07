@@ -1,0 +1,18 @@
+# macOS system files
+.DS_Store
+
+# Dreamweaver
+_notes/
+*.dwsync.xml
+
+# Logs and temp files
+*.log
+*.tmp
+*.bak
+
+# VS Code (if you use it later)
+.vscode/
+
+# Node modules or build stuff (if you ever use a frontend build tool)
+node_modules/
+dist/
