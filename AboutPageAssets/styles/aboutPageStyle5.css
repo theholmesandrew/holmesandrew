@@ -1,0 +1,15 @@
+@charset "UTF-8";
+/* CSS Document */
+
+root {
+  --primary-navy: #002c54;
+  --highlight-burgundy: #7a2636;
+  --text-slate: #444b54;
+  --accent-steel: #b0b8c1;
+  --hover-violet: #6e5a83;
+  --background: #f4f4f9;
+  --linkpblue: #0066cc;
+  --font-body: 'Source Sans Pro', Helvetica, sans-serif;
+  --font-heading: 'Montserrat', sans-serif;
+}
+

@@ -1,0 +1,175 @@
+/* ===============================
+   Global Styles
+================================== */
+
+:root {
+  --text-slate: #333;
+  --linkedin-color: #0077b5;
+  --github-color: #333;
+  --email-color: #d44638;
+}
+
+body {
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: var(--text-slate);
+  background-color: #fff;
+}
+
+/* ===============================
+   Header Layout
+================================== */
+
+header {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* ===============================
+   Logo
+================================== */
+
+.profileLogo {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.logoPlaceholder span {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+/* ===============================
+   Main Profile Content Container
+   (Photo + Text Side-by-Side)
+================================== */
+
+.profileContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+/* ===============================
+   Profile Photo
+================================== */
+
+.profilePhoto {
+  flex: 0 0 200px;
+  display: flex;
+  justify-content: center;
+}
+
+.profilePhoto img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ===============================
+   Profile Header (Name, Title, Bio)
+================================== */
+
+.profileHeader {
+  flex: 1;
+  text-align: left;
+}
+
+.profileHeader h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.profileHeader h3 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  color: var(--text-slate);
+}
+
+.profileHeader hr {
+  border: none;
+  border-top: 2px solid #ddd;
+  margin: 1rem 0;
+}
+
+.profileHeader p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+/* ===============================
+   Social Icons (Round Buttons)
+================================== */
+
+.socialNetworkNavBar {
+  text-align: left;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  color: var(--text-slate);
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Brand-specific hover colors */
+.social-icons a[aria-label="LinkedIn"]:hover {
+  background-color: var(--linkedin-color);
+  color: #fff;
+}
+
+.social-icons a[aria-label="GitHub"]:hover {
+  background-color: var(--github-color);
+  color: #fff;
+}
+
+.social-icons a[aria-label="Email"]:hover {
+  background-color: var(--email-color);
+  color: #fff;
+}
+
+/* ===============================
+   Responsive Design
+================================== */
+
+@media (max-width: 768px) {
+  .profileContainer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profileHeader {
+    text-align: center;
+  }
+
+  .socialNetworkNavBar {
+    text-align: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}

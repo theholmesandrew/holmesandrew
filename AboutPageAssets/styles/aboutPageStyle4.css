@@ -1,0 +1,391 @@
+@charset "UTF-8";
+
+/* ============================================
+   Global Identity Styles for Andrew Holmes
+   Merged from Dreamweaver Template + Modern Enhancements
+   ============================================ */
+
+/*:root {
+  --primary-navy: #002c54;
+  --highlight-burgundy: #7a2636;
+  --text-slate: #444b54;
+  --accent-steel: #b0b8c1;
+  --hover-violet: #6e5a83;
+  --background: #f4f4f9;
+  --linkpblue: #0066cc;
+  --font-body: 'Source Sans Pro', Helvetica, sans-serif;
+  --font-heading: 'Montserrat', sans-serif;
+}*/
+
+
+body {
+  margin-left: auto;
+  margin-right: auto;
+  width: 92%;
+  max-width: 960px;
+  padding-left: 2.275%;
+  padding-right: 2.275%;
+  background-color: #f4f4f9;
+  color: #444b54;
+  font-family: 'Source Sans Pro', Helvetica, sans-serif;
+}
+
+/* ========== HEADER ========== */
+
+header {
+  text-align: center;
+  display: block;
+}
+
+header .profileLogo .logoPlaceholder {
+  background-color: #002c54;
+  width: 187px;
+  text-align: center;
+}
+
+header .logoPlaceholder span {
+	width: 80px;
+	height: 22px;
+	font-family: 'Montserrat', sans-serif;
+	color: rgba(255,255,255,1.00);
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 53px;
+}
+header .profilePhoto {
+  background-color: #b0b8c1;
+  width: 259px;
+  height: 259px;
+  border-radius: 50%;
+  clear: both;
+}
+
+header .profilePhoto img {
+  width: 100%;
+  height: auto;
+}
+
+.profileHeader {
+  text-align: center;
+  padding: 2rem;
+  max-width: 700px;
+}
+
+.profileHeader h1 {
+  font-family: 'Montserrat', sans-serif;
+  color: #002c54;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.profileHeader h2 {
+  font-family: 'Source Sans Pro', Helvetica, sans-serif;
+  color: #6e5a83;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.profileHeader h3 {
+  font-family: 'Source Sans Pro', Helvetica, sans-serif;
+  color: #6e5a83;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+hr {
+  background-color: #b0b8c1;
+  height: 1px;
+  border: none;
+}
+
+.profileHeader p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.8;
+  text-align: justify;
+  overflow-y: auto;
+}
+
+.hero-identity {
+  text-align: center;
+  margin-top: 2rem;
+  font-family: 'Montserrat', sans-serif;
+  padding: 0 1rem;
+}
+
+.hero-identity h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #002c54;
+  margin-bottom: 0.5rem;
+}
+
+.hero-identity h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #7a2636;
+  margin-bottom: 0.5rem;
+}
+
+.hero-identity h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #7a2636;
+  margin-bottom: 1rem;
+}
+
+.hero-identity p {
+  font-size: 1.125rem;
+  font-style: italic;
+  color: #6e5a83;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* ========== SOCIAL ICONS ========== */
+
+.socialNetworkNavBar {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  color: #333;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.social-icons a[aria-label="LinkedIn"]:hover {
+  background-color: #0077b5;
+  color: #fff;
+}
+
+.social-icons a[aria-label="GitHub"]:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.social-icons a[aria-label="Email"]:hover {
+  background-color: #d44638;
+  color: #fff;
+}
+
+/* ========== MAIN CONTENT ========== */
+
+
+.mainContent .section1,
+.mainContent .section2 {
+  display: block;
+}
+
+.section1 .sectionTitle,
+.section2 .sectionTitle {
+  font-family: 'Montserrat', sans-serif;
+  color: #7a2636;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.section1 .sectionTitleRule2,
+.section2 .sectionTitleRule2 {
+  background-color: #b0b8c1;
+  height: 1px;
+}
+
+.mainContent .section1 .section1Content,
+.section2 .sectionContent {
+  font-family: 'Source Sans Pro', Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #444b54;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+.section2 .sectionContentTitle {
+  font-family: 'Montserrat', sans-serif;
+  color: #002c54;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.section2 .sectionContentSubTitle {
+  font-family: 'Source Sans Pro', Helvetica, sans-serif;
+  color: #6e5a83;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+}
+
+/* ========== EXTERNAL RESOURCES NAV ========== */
+
+.externalResourcesNav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+/* Individual resource buttons */
+.externalResources a {
+  display: inline-block;
+  background-color: #7a2636;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  padding: 0.75rem 1.5rem;
+  min-width: 180px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.externalResources a:hover {
+  background-color: #002c54;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* ========== FOOTER ========== */
+
+footer .footerDisclaimer,
+footer .footerNote {
+  font-family: 'Source Sans Pro', Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444b54;
+  font-weight: 700;
+  text-align: center;
+}
+
+footer .footerDisclaimer span,
+footer .footerNote span {
+  color: #b0b8c1;
+  font-weight: 400;
+}
+
+/* ========== RESPONSIVE BREAKPOINTS ========== */
+
+/* ========== MOBILE (≤ 480px) ========== */
+@media only screen and (max-width: 480px) {
+  header .profilePhoto,
+  header .profileLogo .logoPlaceholder {
+    display: inline-block;
+    margin-bottom: 1rem;
+  }
+
+  .profileHeader {
+    text-align: center;
+  }
+
+  .mainContent .section1 .section1Content,
+  .section2 .section2Content {
+    text-align: justify;
+    padding: 0 1rem;
+  }
+
+  .externalResourcesNav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .external-resources a {
+    width: 100%;
+    border-radius: 4px;
+    padding: 1rem;
+    color: white;
+    text-align: center;
+  }
+
+  .hero-identity {
+    text-align: center;
+    padding: 0 1rem;
+  }
+}
+
+/* ========== TABLET (481px–1024px) ========== */
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+  header .profilePhoto {
+    float: left;
+    clear: both;
+    margin-right: 3%;
+  }
+
+  .profileHeader {
+    text-align: left;
+  }
+
+  .mainContent .section1 .section1Content,
+  .section2 .section2Content {
+    text-align: justify;
+  }
+
+  .externalResourcesNav {
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .external-resources a {
+    flex: 1 1 auto;
+    min-width: 180px;
+  }
+}
+
+/* ========== DESKTOP (≥ 1025px) ========== */
+@media only screen and (min-width: 1025px) {
+  header .profileLogo .logoPlaceholder {
+    float: left;
+  }
+
+  header .profilePhoto {
+    float: left;
+    clear: both;
+  }
+
+  .profileHeader {
+    text-align: left;
+  }
+
+  .mainContent .section1 .section1Content,
+  .section2 .section2Content {
+    margin-left: 26%;
+  }
+
+  .externalResourcesNav {
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .external-resources a {
+    min-width: 180px;
+  }
+}

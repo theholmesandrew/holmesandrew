@@ -1,0 +1,327 @@
+@charset "utf-8";
+
+/* ------------------------------------------- */
+/* Global Identity Styles for Andrew Holmes     */
+/* Modified from Dreamweaver Template Base      */
+/* ------------------------------------------- */
+
+:root {
+  --primary-navy: #002c54;
+  --highlight-burgundy: #7a2636;
+  --text-slate: #444b54;
+  --accent-steel: #b0b8c1;
+  --hover-violet: #6e5a83;
+  --background: #f4f4f9;
+  --link-blue: #0066cc;
+}
+
+body {
+  margin-left: auto;
+  margin-right: auto;
+  width: 92%;
+  max-width: 960px;
+  padding-left: 2.275%;
+  padding-right: 2.275%;
+  background-color: var(--background);
+  color: var(--text-slate);
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  line-height: 1.7;
+}
+
+/* Header */
+header {
+  text-align: center;
+  display: block;
+}
+
+header .profileLogo .logoPlaceholder {
+  background-color: var(--primary-navy);
+  width: 187px;
+  text-align: center;
+}
+
+header .logoPlaceholder span {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 53px;
+}
+
+header .profilePhoto {
+  background-color: var(--accent-steel);
+  width: 259px;
+  border-radius: 50%;
+  height: 259px;
+  clear: both;
+}
+
+header .profileHeader h1 {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--primary-navy);
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+header .profileHeader h3 {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: var(--hover-violet);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+hr {
+  background-color: var(--accent-steel);
+  height: 1px;
+}
+
+.profileHeader {
+  text-align: center;
+  padding: 2rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.socialNetworkNavBar {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  color: #333;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Specific hover styles per platform */
+.social-icons a[aria-label="LinkedIn"]:hover {
+  background-color: #0077b5;
+  color: #fff;
+}
+
+.social-icons a[aria-label="GitHub"]:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.social-icons a[aria-label="Email"]:hover {
+  background-color: #d44638; /* Gmail red tone */
+  color: #fff;
+}
+
+/* Main Content sections */
+.mainContent .section1 {
+  display: block;
+}
+
+.section1 .sectionTitle,
+.section2 .sectionTitle {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--highlight-burgundy);
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.section1 .sectionTitleRule2,
+.section2 .sectionTitleRule2 {
+  background-color: var(--accent-steel);
+  height: 1px;
+  padding: 0px;
+}
+
+.mainContent .section1 .section1Content,
+.section2 .sectionContent {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text-slate);
+  line-height: 1.8;
+}
+
+.section2 .sectionContentTitle {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--primary-navy);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.section2 .sectionContentSubTitle {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: var(--hover-violet);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.mainContent .externalResourcesNav .externalResources {
+  background-color: var(--highlight-burgundy);
+  display: inline-block;
+  text-align: center;
+  margin-top: 0px;
+  padding-top: 3%;
+  cursor: pointer;
+}
+
+.mainContent .externalResourcesNav .externalResources:hover {
+  background-color: var(--primary-navy);
+}
+
+.externalResourcesNav .externalResources a {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-decoration: none;
+}
+
+.stretch {
+  content: '';
+  display: inline-block;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+/* Footer */
+footer .footerDisclaimer,
+footer .footerNote {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--text-slate);
+  font-weight: 700;
+}
+
+footer .footerDisclaimer span,
+footer .footerNote span {
+  color: var(--accent-steel);
+  font-weight: 400;
+}
+
+/* Responsive Adjustments */
+@media only screen and (min-width : 285px) and (max-width : 480px) {
+  header, footer {
+    width: 100%;
+    text-align: center;
+  }
+  header .profilePhoto,
+  header .profileLogo .logoPlaceholder {
+    display: inline-block;
+  }
+  header .profileHeader {
+    margin-top: 10%;
+    text-align: center;
+  }
+  .mainContent .section1,
+  .mainContent .section2 {
+    text-align: center;
+    margin-bottom: 10%;
+  }
+  .mainContent .section1 .section1Content,
+  .section2 .section2Content {
+    text-align: justify;
+  }
+  .mainContent .externalResourcesNav .externalResources {
+    width: 100%;
+    height: 35px;
+  }
+}
+
+@media only screen and (min-width : 481px) and (max-width : 1024px) {
+  header {
+    width: 100%;
+  }
+  header .profilePhoto {
+    float: left;
+    clear: both;
+    margin-right: 3%;
+    margin-top: 5%;
+  }
+  header .profileHeader {
+    text-align: left;
+    margin-top: 7%;
+  }
+  .mainContent .section1 .section1Content,
+  .section2 .section2Content {
+    margin-left: 20%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: justify;
+  }
+  .mainContent .externalResourcesNav {
+    margin-left: 20%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+    clear: both;
+  }
+  .mainContent .externalResourcesNav .externalResources {
+    width: 199px;
+    height: 48px;
+  }
+  footer .footerDisclaimer {
+    float: left;
+    margin-left: 3%;
+  }
+  footer .footerNote {
+    float: right;
+    margin-right: 3%;
+  }
+}
+
+@media only screen and (min-width:1025px) {
+  header .profileLogo .logoPlaceholder {
+    float: left;
+    margin-bottom: 50px;
+  }
+  header .profilePhoto {
+    float: left;
+    clear: both;
+    margin-right: 3%;
+  }
+  header .profileHeader {
+    text-align: left;
+    padding-top: 10%;
+  }
+  .mainContent .section1 .section1Content,
+  .section2 .section2Content {
+    margin-left: 26%;
+    text-align: justify;
+  }
+  .mainContent .externalResourcesNav {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+    clear: both;
+  }
+  .mainContent .externalResourcesNav .externalResources {
+    width: 199px;
+    height: 48px;
+  }
+  footer .footerDisclaimer {
+    float: left;
+    margin-left: 3%;
+  }
+  footer .footerNote {
+    float: right;
+    margin-right: 3%;
+  }
+}

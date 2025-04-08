@@ -1,0 +1,328 @@
+/* ============================================
+   Global Identity Styles for Andrew Holmes
+   Merged from Dreamweaver Template + Modern Enhancements
+   ============================================ */
+
+@charset "utf-8";
+
+:root {
+  --primary-navy: #002c54;
+  --highlight-burgundy: #7a2636;
+  --text-slate: #444b54;
+  --accent-steel: #b0b8c1;
+  --hover-violet: #6e5a83;
+  --background: #f4f4f9;
+  --link-blue: #0066cc;
+  --font-body: 'Source Sans Pro', Helvetica, sans-serif;
+  --font-heading: 'Montserrat', sans-serif;
+}
+
+body {
+  margin-left: auto;
+  margin-right: auto;
+  width: 92%;
+  max-width: 960px;
+  padding-left: 2.275%;
+  padding-right: 2.275%;
+  background-color: var(--background);
+  color: var(--text-slate);
+  font-family: var(--font-body);
+  line-height: 1.7;
+}
+
+/* ========== HEADER ========== */
+
+header {
+  text-align: center;
+  display: block;
+}
+
+header .profileLogo .logoPlaceholder {
+  background-color: var(--primary-navy);
+  width: 187px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+header .logoPlaceholder span {
+  font-family: var(--font-heading);
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 53px;
+}
+
+header .profilePhoto {
+  background-color: var(--accent-steel);
+  width: 259px;
+  height: 259px;
+  border-radius: 50%;
+  overflow: hidden;
+  clear: both;
+  margin: 0 auto;
+}
+
+header .profilePhoto img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.profileHeader {
+  text-align: center;
+  padding: 2rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.profileHeader h1 {
+  font-family: var(--font-heading);
+  color: var(--primary-navy);
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 24px;
+  margin: 1.5rem 0 0.5rem;
+}
+
+.profileHeader h3 {
+  font-family: var(--font-body);
+  color: var(--hover-violet);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 1rem;
+}
+
+.profileHeader hr {
+  background-color: var(--accent-steel);
+  height: 1px;
+  border: none;
+  margin: 1.5rem 0;
+}
+
+.profileHeader p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.8;
+  text-align: justify;
+  overflow-y: auto;
+  padding: 0 1rem;
+}
+
+/* ========== SOCIAL ICONS ========== */
+
+.socialNetworkNavBar {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  color: #333;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.social-icons a[aria-label="LinkedIn"]:hover {
+  background-color: #0077b5;
+  color: #fff;
+}
+
+.social-icons a[aria-label="GitHub"]:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.social-icons a[aria-label="Email"]:hover {
+  background-color: #d44638;
+  color: #fff;
+}
+
+/* ========== MAIN CONTENT ========== */
+
+.mainContent .section1,
+.mainContent .section2 {
+  display: block;
+  margin-bottom: 10%;
+}
+
+.section1 .sectionTitle,
+.section2 .sectionTitle {
+  font-family: var(--font-heading);
+  color: var(--highlight-burgundy);
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.section1 .sectionTitleRule2,
+.section2 .sectionTitleRule2 {
+  background-color: var(--accent-steel);
+  height: 1px;
+  padding: 0px;
+}
+
+.mainContent .section1 .section1Content,
+.section2 .sectionContent {
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text-slate);
+  line-height: 1.8;
+  text-align: justify;
+  margin: 0 auto;
+}
+
+.section2 .sectionContentTitle {
+  font-family: var(--font-heading);
+  color: var(--primary-navy);
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.section2 .sectionContentSubTitle {
+  font-family: var(--font-body);
+  color: var(--hover-violet);
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+}
+
+/* ========== EXTERNAL RESOURCES NAV ========== */
+
+.mainContent .externalResourcesNav .externalResources {
+  background-color: var(--highlight-burgundy);
+  display: inline-block;
+  text-align: center;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  color: white;
+  font-family: var(--font-heading);
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+  min-width: 180px;
+}
+
+.mainContent .externalResourcesNav .externalResources:hover {
+  background-color: var(--primary-navy);
+  color: white;
+}
+
+/* ========== FOOTER ========== */
+
+footer .footerDisclaimer,
+footer .footerNote {
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--text-slate);
+  font-weight: 700;
+  text-align: center;
+}
+
+footer .footerDisclaimer span,
+footer .footerNote span {
+  color: var(--accent-steel);
+  font-weight: 400;
+}
+
+/* ========== RESPONSIVE BREAKPOINTS ========== */
+
+@media only screen and (max-width: 480px) {
+  header .profilePhoto,
+  header .profileLogo .logoPlaceholder {
+    display: inline-block;
+    margin-bottom: 1rem;
+  }
+
+  .profileHeader {
+    margin-top: 10%;
+    text-align: center;
+  }
+
+  .mainContent .section1 .section1Content,
+  .section2 .section2Content {
+    text-align: justify;
+  }
+
+  .mainContent .externalResourcesNav .externalResources {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    color: white;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+  header .profilePhoto {
+    float: left;
+    clear: both;
+    margin-right: 3%;
+    margin-top: 5%;
+  }
+
+  .profileHeader {
+    text-align: left;
+    margin-top: 7%;
+  }
+
+  .mainContent .section1 .section1Content,
+  .section2 .section2Content {
+    margin-left: 20%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  .mainContent .externalResourcesNav {
+    margin-left: 20%;
+    text-align: center;
+    clear: both;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  header .profileLogo .logoPlaceholder {
+    float: left;
+    margin-bottom: 50px;
+  }
+
+  header .profilePhoto {
+    float: left;
+    clear: both;
+    margin-right: 3%;
+  }
+
+  .profileHeader {
+    text-align: left;
+    padding-top: 10%;
+  }
+
+  .mainContent .section1 .section1Content,
+  .section2 .section2Content {
+    margin-left: 26%;
+  }
+}
